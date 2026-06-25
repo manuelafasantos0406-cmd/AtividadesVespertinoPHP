@@ -1,0 +1,81 @@
+/* Fundo da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.formulario {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+/* Card do formulário */
+form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(255, 105, 180, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #e64980;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Labels */
+.form-label {
+    color: #c2255c;
+    font-weight: 600;
+}
+
+/* Inputs */
+.form-control {
+    border: 2px solid #fcc2d7;
+    border-radius: 12px;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao focar */
+.form-control:focus {
+    border-color: #e64980;
+    box-shadow: 0 0 12px rgba(230, 73, 128, 0.3);
+}
+
+/* Botão */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f06595, #e64980);
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.btn-primary:hover {
+    background: linear-gradient(135deg, #e64980, #d6336c);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(230, 73, 128, 0.4);
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+    form {
+        padding: 25px;
+    }
+}
